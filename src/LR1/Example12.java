@@ -1,15 +1,20 @@
 package LR1;
 
+import java.time.YearMonth;
 import java.util.Scanner;
 
 public class Example12 {
+
     public static void main(String[] args) {
 
+        System.out.println("Input yor age");
         Scanner in = new Scanner(System.in);
-        System.out.println("Введитете два числа через пробел: ");
-        float A = in.nextFloat();
-        float B = in.nextFloat();
 
-        System.out.println("Сумма чисел равна: " + (A+B));
+        int year = in.nextInt();
+        int yearsOfBirth = YearMonth.now().getYear() - year;
+
+        System.out.print(yearsOfBirth + " Год рождения");
+        in.close();
+
     }
 }
