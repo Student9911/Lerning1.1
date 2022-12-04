@@ -2,7 +2,7 @@ package LR3;
 
 import java.util.Scanner;
 
-public class Example4 {
+public class Example9 {
 
     public static void main(String[] args) {
 
