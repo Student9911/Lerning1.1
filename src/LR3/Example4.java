@@ -1,7 +1,5 @@
 package LR3;
 
-import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Example4 {
@@ -9,43 +7,42 @@ public class Example4 {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        System.out.println("Input your size array: ");
-        int size = in.nextInt();
-        int size2 = in.nextInt();
-        int x = in.nextInt();
-        System.out.println("size array: " + size);
+        System.out.println("Введите два целых числа");
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c;
+        int d;
+        int g;
+        int y;
 
-        int[] array = new int[size];
-        int[] array2 = new int[size2];
-        Random random = new Random();
 
-        for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(300);
-            System.out.println("Элемент массива [" +i+ "] " + array[i]);
+        if (a > b) {
+            c = a - b + 1;
+            d = b;
+            g = a;
+            System.out.println("Программа выведет все целые числа в диапазоне\nот " + b + " до " + a);
 
+        } else {
+            c = b - a + 1;
+            d = a;
+            g = b;
+            System.out.println("Программа выведет все целые числа в диапазоне\n от " + a + " до " + b);
         }
-        Arrays.sort(array);
-
-
-        System.out.println("Сортировка массива произведена");
-
-        for (int i = 0; i < array.length; i++) {
-            System.out.println("Элемент массива [" +i+ "] после сортировки " + array[i]);
+        int[] ints = new int[c];
+        System.out.println("Можно это сделать с помощью массива и оператора цикла for ");
+        for (int i = 0; i < ints.length; i ++) {
+            ints[i] = d + i;
+            System.out.println("["+ i + "]" + ints[i]);
         }
-        for (int i = 0; i < array2.length; i++) {
-            array2[i] = random.nextInt(20);
-            System.out.println("Элемент массива2 [" +i+ "] " + array2[i]);
-
+        y = d;
+        System.out.println("А можно просто выводить корректные числа в консоль не записывая их никуда\nиспользуя оператор цикла while");
+        while (y != g) {
+            y = d ++;
+            System.out.print(y + ", ");
         }
-        Arrays.sort(array2);
-        for (int i = 0; i < array2.length; i++) {
-            if (x == array2[i]) {
-                System.out.println("Круто совпадение  " + x);
-
-            } else System.out.println("Элемент массива2 после сортировки [" +i+ "] " + array2[i]);
-
-
-        }
-
     }
 }
+// Напишите программу, в которой пользователем вводится два целых числа.
+// Программа выводит все целые числа — начиная с наименьшего (из двух введенных чисел)
+// и заканчивая наибольшим (из двух введенных чисел). Предложите разные версии программы
+// (с использованием разных операторов цикла).
