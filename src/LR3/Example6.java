@@ -14,12 +14,14 @@ public class Example6 {
             int g = 0;
             int i = 0;
 
+            System.out.println("Сечас будут выведены числа\n" +
+                    "которые при делении на 5 дают в остатке 2: ");
             while (i < ints.length - 1) {
                 g++;
                 if (g % 5 == 2) {
                     i ++;
                     ints[i] = g;
-                    System.out.println(ints[i]);
+                    System.out.print(ints[i] + "\t");
 
                 }
             }

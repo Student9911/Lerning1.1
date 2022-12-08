@@ -3,7 +3,9 @@ package LR3;
 public class Example8 {
 
     public static void main(String[] args) {
+        // Запись в переменную n (это будет длинна массива)
         int n = 10;
+        // Запись в переменную number
         char[] chars = new char[n];
         char[] onlyChars = new char[] {'A', 'E', 'I', 'O', 'U', 'Y'};
         char b = 'A';
