@@ -1,38 +1,52 @@
 package LR4;
 
-import java.util.Scanner;
+
 
 public class Example7 {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);                                        // Создание объекта класса Scanner
-        System.out.print("введите количество строк массива: ");
-        int a = in.nextInt();
-        System.out.print("введите количество столбцов массива: ");
-        int b = in .nextInt();
-        int[][] ArrayZmeyka = new int[a][b];                                        // создание массива
-        int hvost = 0;                                                              //переменная для подсчета использованных значений
-        int telo = 0;                                                               //переменная для заполнения элементов массива
-        int h = 0;                                                                  //вспомогательная переменная для подсчета строк
-        for (int i = 0; h < ArrayZmeyka.length ; h++) {
-            for (int j = 0; j <(ArrayZmeyka[i].length - hvost); j++) {              //заполнение верхней строки массива слева-направо
-                ArrayZmeyka[i][j] = telo;
+
+        int a = 10;
+        int b = 10;
+        // создание двухмерного массива
+        int[][] arrayZmeyka = new int[a][b];
+        //переменная для подсчета использованных значений
+        int hvost = 0;
+        //переменная для заполнения элементов массива
+        int telo = 0;
+        //вспомогательная переменная для подсчета строк
+        int h = 0;
+        for (int i = 0; h < arrayZmeyka.length ; h++) {
+            //заполнение верхней строки массива слева-направо
+            for (int j = 0; j <(arrayZmeyka[i].length - hvost); j++) {
+                arrayZmeyka[i][j] = telo;
                 telo++;
             }
-            if(i< ArrayZmeyka.length-1) {
+            if(i< arrayZmeyka.length-1) {
                 i++;}
-            for (int o = a-1; o > hvost; o--) {                 //заполнение правого столбца массива снизу-вверх
-                ArrayZmeyka[o][ArrayZmeyka[i].length-1-hvost] = telo;
+            //заполнение правого столбца массива снизу-вверх
+            for (int o = a-1; o > hvost; o--) {
+                arrayZmeyka[o][arrayZmeyka[i].length-1-hvost] = telo;
                 telo++;
             }
             hvost++;
         }
-        int z = 0;                                                                  //вспомогательная переменная для подсчета символов в строке
-        for (int i = 0; i < ArrayZmeyka.length; i++){                               //печать массива
-            int count = i+1;                                                        //переменная для повышения номера индекса для вывода на консоль
-            System.out.print("номер строки " + count + " : ");
-            for (int j = 0; j < ArrayZmeyka[i].length; j++){
-                System.out.print(ArrayZmeyka[i][j]+" ");
+        //вспомогательная переменная для подсчета символов в строке
+        int z = 0;
+        for (int i = 0; i < arrayZmeyka.length; i++){
+            //переменная для повышения номера индекса для вывода на консоль
+            int count = i+1;
+            if (count < 10) {
+                System.out.print("номер строки " + count + " :  ");
+            } else {
+                System.out.print("номер строки " + count + " : ");
+            }
+            for (int j = 0; j < arrayZmeyka[i].length; j++){
+                if (arrayZmeyka[i][j] < 10) {
+                    System.out.print(arrayZmeyka[i][j] + "  ");
+                } else {
+                    System.out.print(arrayZmeyka[i][j] + " ");
+                }
                 z++;
             }
             System.out.println(" Количество символов в строке " + z);
