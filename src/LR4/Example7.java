@@ -16,26 +16,26 @@ public class Example7 {
         int telo = 0;
         //вспомогательная переменная для подсчета строк
         int h = 0;
-        for (int i = 0; h < arrayZmeyka.length ; h++) {
+        for (int i = 0; h < arrayZmeyka.length ; h ++) {
             //заполнение верхней строки массива слева-направо
-            for (int j = 0; j <(arrayZmeyka[i].length - hvost); j++) {
+            for (int j = 0; j < (arrayZmeyka[i].length - hvost); j ++) {
                 arrayZmeyka[i][j] = telo;
-                telo++;
+                telo ++;
             }
-            if(i< arrayZmeyka.length-1) {
-                i++;}
+            if(i < arrayZmeyka.length - 1) {
+                i ++;}
             //заполнение правого столбца массива снизу-вверх
-            for (int o = a-1; o > hvost; o--) {
-                arrayZmeyka[o][arrayZmeyka[i].length-1-hvost] = telo;
+            for (int o = a - 1; o > hvost; o --) {
+                arrayZmeyka[o][arrayZmeyka[i].length - 1 - hvost] = telo;
                 telo++;
             }
-            hvost++;
+            hvost ++;
         }
         //вспомогательная переменная для подсчета символов в строке
         int z = 0;
         for (int i = 0; i < arrayZmeyka.length; i++){
             //переменная для повышения номера индекса для вывода на консоль
-            int count = i+1;
+            int count = i + 1;
             if (count < 10) {
                 System.out.print("номер строки " + count + " :  ");
             } else {

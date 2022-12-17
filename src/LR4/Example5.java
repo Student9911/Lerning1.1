@@ -11,7 +11,7 @@ public class Example5 {
         // Создание объекта класса Scanner
         Scanner id = new Scanner(System.in);
         // Сообщение в консоль для понимания
-        System.out.print("введите количество  столбцов массива: ");
+        System.out.print("введите количество столбцов массива: ");
         // Запись в переменную "а"
         int a = id.nextInt();
         // Сообщение в консоль для понимания
