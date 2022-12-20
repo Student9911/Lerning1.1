@@ -1,19 +1,26 @@
 package timus;
 
-import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class task_1820 {
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
-        PrintWriter out = new PrintWriter(System.out);
+        Scanner in = new Scanner(System.in);
 
-        int N = scan.nextInt();
-        int K = scan.nextInt();
-        int result = (N * 2) / K;
+        int n = in.nextInt();
+        int k = in.nextInt();
+        int result;
+        if (k > n) {
+            result = 2;
+        } else if ((n * 2) % k == 0) {
+           result = (n * 2) / k;
 
-        out.println(result);
-        out.flush();
+
+        } else {
+            result = (n * 2) / k + 1;
+        }
+        System.out.println(result);
+
+
     }
 }
