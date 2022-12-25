@@ -3,24 +3,31 @@ package LR5.Example2;
 import java.util.Set;
 
 class Example2 {
-     // класс, у которого есть два символьных поля и метод.
-     private char simbol1, simbol2;
+    // класс, у которого есть два символьных поля и метод.
+    char simbol1;
+    char simbol2;
+    //и метод,он возвращает результат, и у
+    // него нет аргументов. При вызове метод выводит в
+    //консольное окно все символы из кодовой таблицы, которые
+    // находятся «между» символами, являющимися значениями
+    //полей объекта (из которого вызывается метод). Например,
+    //если полям объекта присвоены значения ‘A’ и ‘D’,
+    //то при вызове метода в консольное окно должны выводиться
+    //все символы от ‘A’ до ‘D’ включительно.
+    public char Set() {
 
-     public void Set(char simbol1, char simbol2) {
-         this.simbol1 = simbol1;
-         this.simbol2 = simbol2;
+        if (simbol2 > simbol1) {
+            for (int i = simbol1; i <= (int) simbol2; i++) {
+                System.out.println("'" + (char) i + "'");
+            }
+        } else {
+            for (int i = simbol2; i <= (int) simbol1; i++) {
+                System.out.println("'" + (char) i + "'");
+            }
+        }
+        return simbol1;
 
-     }
-
-    public void showCharArray() {
-         if (simbol2 > simbol1) {
-             for (int i = simbol1; i <= (int) simbol2; i ++) {
-                 System.out.println("'" + (char) i + "'");
-             }
-         }else {
-             for (int i = simbol2; i <= (int) simbol1; i++) {
-                 System.out.println("'" + (char) i + "'");
-             }
-         }
     }
 }
+
+

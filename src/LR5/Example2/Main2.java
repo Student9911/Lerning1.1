@@ -5,11 +5,15 @@ public class Main2 {
     public static void main(String[] args) {
 
         Example2 test2 = new Example2();
+        test2.simbol1 = 'A';
+        test2.simbol2 = 'D';
 
 
-        test2.Set('A', 'D');
 
-        test2.showCharArray();
+        test2.Set();
+
+
+
     }
 
 
