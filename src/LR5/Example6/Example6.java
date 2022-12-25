@@ -1,25 +1,33 @@
 package LR5.Example6;
 
 public class Example6 {
-
+    //класс с двумя закрытыми целочислинными полями
     private int min;
     private int max;
-
+    //Значения полям присваиваются с помощью
+    // открытого метода.
+    //Метод может вызываться с одним
     public void volume(int a) {
         if (a < max) {
             min = a;
         } else {
             max = a;
         }
+        System.out.println("Метод с 1-м аргументом");
     }
+    //или двумя целочисленными
+    // аргументами.
     public void volume(int a, int b) {
 
         min = Math.min(a, b);
         max = Math.max(a, b);
+        System.out.println("Метод с 2-мя аргументами");
 
     }
+    //В классе также должен быть метод,
+    // отображающий в консольном окне значения полей объекта.
     void result() {
-        System.out.println("min = " + min + "max = " + max);
+        System.out.println("min = " + min + " max = " + max);
     }
     //конструктор, который работает по тому же принципу, что и метод для присваивания значений полям
     Example6(int a, int b) {
