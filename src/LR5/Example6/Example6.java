@@ -13,7 +13,6 @@ public class Example6 {
         } else {
             max = a;
         }
-        System.out.println("Метод с 1-м аргументом");
     }
     //или двумя целочисленными
     // аргументами.
@@ -38,11 +37,7 @@ public class Example6 {
     //конструктор, который работает по тому же принципу, что и метод для присваивания значений полям
     Example6(int a) {
         System.out.println("Конструктор Example6() c 1-м аргументом");
-        if (a < max) {
-            min = a;
-        } else {
-            max = a;
-        }
+        volume(a);
     }
 }
 
