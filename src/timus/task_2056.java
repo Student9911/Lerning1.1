@@ -37,7 +37,3 @@ public class task_2056 {
         System.out.println(result);
     }
 }
-
-
-
-
