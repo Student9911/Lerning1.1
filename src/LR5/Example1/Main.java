@@ -1,12 +1,16 @@
 package LR5.Example1;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
 
+        Random random = new Random();
+
         Example1 test = new Example1();
 
-        test.Set('Y');
+        test.Set((char) random.nextInt(65, 80));
 
         int a = test.getCodeSymbol();
 
