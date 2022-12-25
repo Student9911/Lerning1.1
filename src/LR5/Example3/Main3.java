@@ -3,10 +3,14 @@ package LR5.Example3;
 public class Main3 {
 
     public static void main(String[] args) {
+        int num1 = 1;
+        int num2 = 2;
 
         Example3 test3_1 = new Example3();
+        Example3 test3_2 = new Example3(num1);
+        Example3 test3_3 = new Example3(num1, num2);
 
-        test3_1.Set(10);
+
     }
 }
 
