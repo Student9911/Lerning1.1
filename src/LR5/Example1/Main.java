@@ -9,7 +9,6 @@ public class Main {
         Random random = new Random();
 
         Example1 test = new Example1();
-
         test.Set((char) random.nextInt(65, 80));
 
         int a = test.getCodeSymbol();
