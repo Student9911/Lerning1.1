@@ -22,7 +22,7 @@ public class SubClass3_3 extends SubClass3_2 {
     public String toString() {
         String ThirdFieldValue =
                 "\n str 2 = " + this.getStr2();
-        return super.toString()+ThirdFieldValue;
+        return super.toString() + ThirdFieldValue;
     }
     public String getStr2() {
         return str2;

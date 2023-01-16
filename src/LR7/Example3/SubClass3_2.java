@@ -1,6 +1,6 @@
 package LR7.Example3;
 
-public class SubClass3_2 extends SubClass3_1 {
+public class SubClass3_2 extends SupClass3_1 {
 
     SubClass3_2(int int1) {
         super(int1);
@@ -15,18 +15,18 @@ public class SubClass3_2 extends SubClass3_1 {
     //конструктор с двумя параметрами
     SubClass3_2(int int1, char char1) {
         super(int1);
-        this.setInt1Str1(int1, char1);
-    }
-
-
-    public String toString() {
-        String SecondFieldValue =
-                "\n str 1 = " + this.getChar1();
-        return super.toString()+SecondFieldValue;
+        setInt1Str1(int1, char1);
     }
     public char getChar1() {
         return char1;
     }
+    @Override
+    public String toString() {
+        String SecondFieldValue =
+                "\n str 1 = " + this.getChar1();
+        return super.toString() + SecondFieldValue;
+    }
+
 
 
 }
