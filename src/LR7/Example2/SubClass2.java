@@ -7,36 +7,47 @@ public class SubClass2 extends SuperClass2 {
     public int int1;
 
     //версия метода без параметров,
-    SubClass2() {setStr1();}
+    SubClass2() {
+        setStr1();
+    }
     //версия метода с текстовым параметром,
-    SubClass2(String str2) {setStr1(str2);}
+    SubClass2(String str2) {
+        setStr1(str2);
+    }
     //версия метода с целочисленным параметром,
-    SubClass2(int int1) {setStr1(); this.setInt1(int1);}
+    SubClass2(int int1) {
+        setStr1(); this.setInt1(int1);
+    }
     //версия метода с текстовым и целочисленным параметром.
-    SubClass2(String str2, int int1) {setStr1(str2); this.setInt1(int1);}
+    SubClass2(String str2, int int1) {
+        setStr1(str2); this.setInt1(int1);
+    }
 
     public void setInt1(int int1) {
+
         this.int1 = int1;
     }
-    public void setStr1 (){
+    public void setStr1 () {
+
         this.str2 = "здесь ничего нет";
     }
 
-    public void setStr1 (String str2){
+    public void setStr1 (String str2) {
+
         this.str2 = str2;
     }
 
-    public int getInt1(){
+    public int getInt1() {
         //   System.out.println(str1);
         return int1;
     }
 
-    public String getStr1(){
+    public String getStr1() {
         //   System.out.println(str1);
         return str2;
     }
 
-    public int getStr1length(){
+    public int getStr1length() {
         //   System.out.println("Длина текстовой строки="+str1.length());
         return str2.length();
     }
