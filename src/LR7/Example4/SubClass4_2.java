@@ -1,6 +1,6 @@
 package LR7.Example4;
 
-public class SubClass4_2 extends SubClass4_1 {
+public class SubClass4_2 extends SupClass4_1 {
 
     SubClass4_2(char char1) {
         super(char1);
@@ -27,7 +27,7 @@ public class SubClass4_2 extends SubClass4_1 {
     public String toString() {
         String SecondFieldValue =
                 "\n str 1 = " + this.getStr1();
-        return super.toString()+SecondFieldValue;
+        return super.toString() + SecondFieldValue;
     }
     public String getStr1() {
         return str1;

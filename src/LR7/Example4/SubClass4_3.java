@@ -23,11 +23,11 @@ public class SubClass4_3 extends SubClass4_2 {
         super(copy.char1, copy.str1);
         this.setChar1Str1Int1(copy.char1, copy.str1, copy.int1);
     }
-
+    @Override
     public String toString() {
         String ThirdFieldValue =
                 "\n str 2 = " + this.getInt1();
-        return super.toString()+ThirdFieldValue;
+        return super.toString() + ThirdFieldValue;
     }
     public int getInt1() {
         return int1;
