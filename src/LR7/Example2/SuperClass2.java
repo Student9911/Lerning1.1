@@ -31,7 +31,7 @@ public class SuperClass2 {
     //@Override - аннотация указываемая для того, чтобы показать что далее мы собираемся переопределять метод суперкласса
     @Override
     public String toString() {
-        String SuperClassNameAndFieldValue = "superClassTest{" + "str1=\"" + getStr1() + '\"' + " string.length = " +"\""+getStr1length()+"\"}";
+        String SuperClassNameAndFieldValue = "superClassTest {" + " str1 =\"" + getStr1() + '\"' + " string.length = " +"\""+getStr1length()+"\" }";
         return SuperClassNameAndFieldValue;
     }
 }

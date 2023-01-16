@@ -55,8 +55,8 @@ public class SubClass2 extends SuperClass2 {
     //@Override - аннотация для указываемая для того, чтобы показать что далее мы собираемся переопределять метод суперкласса
     @Override
     public String toString() {
-        String ClassNameAndFieldValue = "subClassTest{" + "str2=\"" + getStr1() + '\"' + " string.length = " +"\""+getStr1length()+"\"}"
-                +"\nsubClassTest{" + "int1=\"" + getInt1() + "\"}";
+        String ClassNameAndFieldValue = "subClassTest {" + " str2 =\"" + getStr1() + '\"' + " string.length = " +"\""+getStr1length()+"\" }"
+                +"\nsubClassTest {" + "int1 =\" " + getInt1() + "\" }";
         return ClassNameAndFieldValue;
     }
 }
