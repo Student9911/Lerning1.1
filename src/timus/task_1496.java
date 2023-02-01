@@ -13,7 +13,7 @@ public class task_1496 {
         int n = in.nextInt();
         String[] submit = new String[n];
         int count;
-        HashSet<String> spammers = new HashSet<String>();
+        HashSet<String> spammers = new HashSet<>();
         for (int i = 0; i < submit.length; i++) {
             submit[i] = in.next();
             spammers.add(submit[i]);
@@ -21,8 +21,8 @@ public class task_1496 {
 
         for (String t : spammers) {
             count = 0;
-            for (int i = 0; i < submit.length; i++) {
-                if (t.equals(submit[i])) {
+            for (String s : submit) {
+                if (t.equals(s)) {
                     count++;
                 }
             }
