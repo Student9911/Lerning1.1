@@ -4,7 +4,6 @@ package LR9.task2;
         – ввод строки вместо числа;
         – нет столбца с таким номером.*/
 
-import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
