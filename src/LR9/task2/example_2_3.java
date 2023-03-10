@@ -15,13 +15,15 @@ public class example_2_3 {
             a = false;
             SetArray();
         } catch (InputMismatchException e) {
-            System.out.println("–\tввод строки вместо числа;\n" +
-                    "–\tввод или вычисление значения за границами диапазона типа.\n");
+            System.out.println("""
+                    –\tввод строки вместо числа;
+                    –\tввод или вычисление значения за границами диапазона типа.
+                    """);
             a = true;
 
         }
 
-        } while (a == true);
+        } while (a);
 
 
 
@@ -31,7 +33,7 @@ public class example_2_3 {
 
     private static void SetArray() {
         Scanner in = new Scanner(System.in);
-        System.out.print("введите 4 числа для ссумирования\n");
+        System.out.print("введите 4 числа от -127 до 127 для ссумирования через пробел\n");
         bytesArray = new byte[4];
         for (int i = 0; i < bytesArray.length; i++) {
             bytesArray[i] = in.nextByte();
@@ -41,11 +43,8 @@ public class example_2_3 {
     private static void sumArray() {
         byte summ = 0;
 
-        for (int i = 0; i < bytesArray.length; i ++) {
-            summ += bytesArray[i];
-            if (summ > 127 || summ < -127) {
-
-            }
+        for (byte b : bytesArray) {
+            summ += b;
 
         }
         System.out.println("сумма элементов массива = ["+ summ +"]");
