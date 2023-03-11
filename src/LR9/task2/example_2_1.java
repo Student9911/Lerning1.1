@@ -19,6 +19,8 @@ public class example_2_1{
             System.out.println("Отсутствуют положительные элементы");
         } catch (InputMismatchException e) {
             System.out.println("– несоответствие числового типа данных");
+        } catch (NumberFormatException e) {
+            System.out.println("– ввод строки вместо числа;");
         }
 
     }
@@ -27,10 +29,15 @@ public class example_2_1{
     private static void positivAvg () throws NullPointerException {
         int a = 0;
         int count = 0;
+        int z;
         Scanner in = new Scanner(System.in);
         System.out.println("введите 5 чисел для вычисления\n");
         for (int i = 0; i < ints.length; i ++) {
-            ints[i] = in.nextInt();
+            z = Integer.parseInt(in.next());
+            if (z >= 2147483647 || z <= -2147483648) {
+                throw new InputMismatchException();
+            }
+            ints[i] = z;
         }
         for (int anInt : ints) {
             if (anInt >= 0) {
