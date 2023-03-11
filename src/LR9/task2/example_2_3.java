@@ -31,7 +31,7 @@ public class example_2_3 {
 
     private static byte[] bytesArray;
 
-    private static void SetArray() {
+    private static void SetArray() throws InputMismatchException {
         Scanner in = new Scanner(System.in);
         System.out.print("введите 4 числа от -127 до 127 для ссумирования через пробел\n");
         bytesArray = new byte[4];

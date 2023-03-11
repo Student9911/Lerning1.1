@@ -22,22 +22,20 @@ public class example_2_1{
         }
 
     }
-    private static int[] ints = new int[5];
+    private static final int[] ints = new int[5];
 
-    private static void positivAvg () {
+    private static void positivAvg () throws NullPointerException {
         int a = 0;
         int count = 0;
-        long b;
-        String str;
         Scanner in = new Scanner(System.in);
         System.out.println("введите 5 чисел для вычисления\n");
         for (int i = 0; i < ints.length; i ++) {
             ints[i] = in.nextInt();
         }
-        for (int i = 0; i < ints.length; i ++) {
-            if (ints[i] >= 0) {
-                a += ints[i];
-                count ++;
+        for (int anInt : ints) {
+            if (anInt >= 0) {
+                a += anInt;
+                count++;
             }
 
 
@@ -45,7 +43,7 @@ public class example_2_1{
         if (count == 0) {
             throw new NullPointerException();
         }
-        System.out.println("среднее значение [" + a / count + "]");
+        System.out.println("среднее значение положительных элементов [" + a / count + "]");
 
     }
 }

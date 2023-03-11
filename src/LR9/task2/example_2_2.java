@@ -11,7 +11,7 @@ public class example_2_2 {
     public static void main(String[] args) {
         arr();
         Scanner in = new Scanner(System.in);
-        boolean b = false;
+        boolean b;
         System.out.println("Введите номер столбца");
         do {
             try {
@@ -32,7 +32,7 @@ public class example_2_2 {
 
 
     }
-    private static int [][] matrix = new int[4][4];
+    private static final int [][] matrix = new int[4][4];
 
 
     private static void arr() {
