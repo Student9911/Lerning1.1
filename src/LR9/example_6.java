@@ -9,7 +9,7 @@ public class example_6 {
         } catch (ArithmeticException e) {
             System.out.println("1");
         } catch (RuntimeException e) {
-            System.out.println("3");
+            System.out.println("3 " + e);
         } catch (Exception e) {
             System.out.println("2");
         }

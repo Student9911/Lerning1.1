@@ -10,7 +10,7 @@ public class example_4 {
         } catch (NullPointerException e) {
             System.out.println("1");
         } catch (Exception e) {
-            System.out.println("2");
+            System.out.println("2 " + e);
         } catch (Error e) {
             System.out.println("3");
         }
