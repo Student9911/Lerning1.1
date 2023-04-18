@@ -3,6 +3,8 @@ package LR12;
 import java.util.List;
 import java.util.stream.Collectors;
 
+// В примере показана функция возвращающая список строк, начинающихся с большой буквы.
+
 public class example_3 {
 
     public static void main(String[] args) {

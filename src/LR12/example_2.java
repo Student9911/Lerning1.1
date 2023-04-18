@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
+// В примере показана функция, возвращающая массив одинаковых элементов двух массивов.
+
 public class example_2 {
 
     public static void main(String[] args) {
