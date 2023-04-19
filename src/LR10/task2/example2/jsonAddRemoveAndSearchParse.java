@@ -76,7 +76,7 @@ public class jsonAddRemoveAndSearchParse {
         Scanner in = new Scanner(System.in);
         JSONArray jsonArray = (JSONArray) obj.get("events");
         System.out.println("Введите имя для удаления данных");
-        String title = in.next();
+        String title = in.nextLine();
         Iterator iterator = jsonArray.iterator();
         while (iterator.hasNext()) {
             JSONObject book = (JSONObject) iterator.next();
@@ -131,10 +131,10 @@ public class jsonAddRemoveAndSearchParse {
             for (Object o : jsonArray) {
                 JSONObject book = (JSONObject) o;
                 System.out.println("\nТекущий элемент: " + jsonObject.keySet().iterator().next());
-                System.out.println("Код: " + book.get("name"));
-                System.out.println("номер по порядку: " + book.get("number"));
-                System.out.println("Время: " + book.get("color"));
-                System.out.println("description: " + book.get("date"));
+                System.out.println("имя: " + book.get("name"));
+                System.out.println("номер: " + book.get("number"));
+                System.out.println("цвет: " + book.get("color"));
+                System.out.println("дата: " + book.get("date"));
 
             }
         } catch (Exception e) {
