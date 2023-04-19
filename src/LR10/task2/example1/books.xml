@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <book>
+    <title>The Lord of the Rings</title>
+    <author>J.R.R. Tolkien</author>
+    <year>1954</year>
+    <price>20.00</price>
+  </book>
+  <book>
+    <title>2</title>
+    <author>3</author>
+    <year>1954</year>
+    <price>2</price>
+  </book>
+  <book>
+    <title>Война и мир</title>
+    <author>Лев Толстой</author>
+    <year>1873</year>
+    <price>1000</price>
+  </book>
+</catalog>
