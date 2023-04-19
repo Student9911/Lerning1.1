@@ -11,6 +11,14 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
+/*В данном примере мы используем библиотеку Apache POI для чтения Excel файла.
+Мы открываем файл Excel с помощью FileInputStream и создаем объект Workbook
+с помощью метода WorkbookFactory.create(). Затем мы получаем лист Excel по индексу
+с помощью метода getSheetAt() и итерируемся по строкам и ячейкам листа Excel с помощью
+циклов for. В конце мы закрываем файл Excel с помощью методов close().
+Если в процессе выполнения программы возникнет ошибка, то она будет обработана в блоке catch
+и в консоль будет выведено пояснение по ошибке*/
+
 public class excelParser {
     public static void main(String[] args) {
         try {
