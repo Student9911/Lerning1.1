@@ -30,15 +30,13 @@ public class InConvertInText {
 
 
             InputStream inUrl = new URL("http://google.com").openStream();
-            Reader rUrl=new InputStreamReader(inUrl, "cp1251"); // символьный
-// поток
+            Reader rUrl=new InputStreamReader(inUrl, "cp1251"); // символьный поток
             readAllByByte(rUrl);
             System.out.print("\n\n\n");
             inUrl.close();
             rUrl.close(); // С потоком связан массив типа byte
             InputStream inArray = new ByteArrayInputStream( new byte[] {5, 8, 3, 9, 11});
-            Reader rArray=new InputStreamReader(inArray,"cp1251" ); // символьный
-// поток
+            Reader rArray=new InputStreamReader(inArray,"cp1251" ); // символьный поток
             readAllByByte(rArray);
             System.out.print("\n\n\n");
             inArray.close();
